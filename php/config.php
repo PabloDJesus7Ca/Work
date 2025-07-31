@@ -9,11 +9,10 @@ $dotenv->load();
 
 
     
-    // $host = $parsed['host'];
-    // $user = $parsed['user'];
-    // $password = $parsed['pass'];
-    // $dbname = ltrim($parsed['path'], '/');
-    // $port = $parsed['port'] ?? 3306;
+    $host = $parsed['host'];
+    $user = $parsed['user'];
+    $password = $parsed['pass'];
+    $port = $parsed['port'] ?? 3306;
 
 
     $host = $_ENV['DB_HOST'] ?? getenv('DB_HOST') ?? 'localhost';
